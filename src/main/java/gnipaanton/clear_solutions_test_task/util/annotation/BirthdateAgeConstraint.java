@@ -12,6 +12,7 @@ import java.lang.annotation.*;
 @Retention(RetentionPolicy.RUNTIME)
 public @interface BirthdateAgeConstraint{
     String message() default "Age under 18";
+    int minAge() default 18;
     public Class<?>[] groups() default {};
     public Class<? extends Payload>[] payload() default {};
 }
