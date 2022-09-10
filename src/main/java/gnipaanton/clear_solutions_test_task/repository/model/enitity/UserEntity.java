@@ -1,5 +1,6 @@
 package gnipaanton.clear_solutions_test_task.repository.model.enitity;
 
+import gnipaanton.clear_solutions_test_task.util.annotation.BirthdateAgeConstraint;
 import lombok.*;
 
 import javax.persistence.*;
@@ -29,6 +30,7 @@ public class UserEntity {
     @Column(name = "last_name")
     private String lastName;
 
+    @BirthdateAgeConstraint
     private String birthdate;
 
     @Column(name = "phone_number")
